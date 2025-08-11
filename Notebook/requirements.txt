@@ -1,0 +1,10 @@
+pandas
+requests
+matplotlib
+seaborn
+scikit-learn
+sentence-transformers
+nltk
+python-pptx
+numpy
+scipy

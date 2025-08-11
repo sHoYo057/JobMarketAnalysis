@@ -1,0 +1,22 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+.venv
+venv/
+env/
+*.sqlite3
+
+# Jupyter
+.ipynb_checkpoints
+
+# Streamlit / IDE cache
+.streamlit/
+.idea/
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
