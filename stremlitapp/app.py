@@ -24,8 +24,13 @@ SKILL_KEYWORDS = [
     "spark", "hadoop", "kubernetes", "docker", "git", "linux"
 ]
 
-APP_ID = "2e5ae062"    # Your Adzuna App ID
-APP_KEY = "808ef5101eab10c5608449c29dcdf259"  # Your Adzuna App Key
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # reads .env file
+
+APP_ID = os.getenv("ADZUNA_APP_ID")
+APP_KEY = os.getenv("ADZUNA_APP_KEY")
 
 def extract_skills(text):
     found = []

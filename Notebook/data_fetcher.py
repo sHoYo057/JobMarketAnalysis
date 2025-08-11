@@ -2,8 +2,13 @@ import requests
 import pandas as pd
 from skill_extractor import extract_skills
 
-APP_ID = "2e5ae062"
-APP_KEY = "808ef5101eab10c5608449c29dcdf259"
+from dotenv import load_dotenv
+import os
+
+load_dotenv()  # reads .env file
+
+APP_ID = os.getenv("ADZUNA_APP_ID")
+APP_KEY = os.getenv("ADZUNA_APP_KEY")
 
 def fetch_adzuna_jobs(keyword, country="us", pages=1, results_per_page=50):
     all_jobs = []
